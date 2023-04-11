@@ -16,28 +16,5 @@
 
 
 
-     
-
-
-
-<script>
-     let str = 'пошёл нахуй, !"№;%:?*()_+';
-let key = '12345';
-        let a = JSON.stringify(encrypt(str, key));
-a = encodeURI(a);
-
-   lumAjax({
-           url:'decrypt.php?data=' + a + '&key=' + encodeURI(key),
-    success: function(data){
-        if (data !== ''){
-
-            console.log(data);
-        }
-    }
-
-	});
-
-
-        </script>
      </body>
 </html>
